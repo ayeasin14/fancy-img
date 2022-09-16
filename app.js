@@ -4,6 +4,7 @@ const galleryHeader = document.querySelector('.gallery-header');
 const searchBtn = document.getElementById('search-btn');
 const sliderBtn = document.getElementById('create-slider');
 const sliderContainer = document.getElementById('sliders');
+const refreshPage = document.getElementById('btn-refreshPage');
 // selected image 
 let sliders = [];
 
@@ -119,4 +120,9 @@ searchBtn.addEventListener('click', function () {
 
 sliderBtn.addEventListener('click', function () {
   createSlider()
+})
+
+// for refreshPage 
+refreshPage.addEventListener('click', function () {
+  location.reload();
 })
